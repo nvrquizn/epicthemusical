@@ -1,0 +1,1213 @@
+/* ========================================================= */
+/* 🌤️ Sak (#327675)'s Den CSS - Polites Theme               */
+/* 🌬️ Gentle Sky / Open Wind / Warm Divine Aesthetic        */
+/* ========================================================= */
+
+/*
+READ ME:
+- This theme is inspired by Polites from Epic the Musical.
+- Expect calm sky tones, soft drifting blues, and peaceful motion energy.
+- Colors are airy sapphire, muted cloud-blue, and stormglass accents.
+- Designed for a warm, uplifting, open-atmosphere aesthetic.
+- Do NOT redistribute without credit.
+*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;600&display=swap');
+
+:root {
+
+  --kolur1: #7da9d6;     /* softened sky sapphire */
+  --kolur170: #7da9d6b0;
+
+  --kolur2: #5d88b8;     /* calm wind blue */
+  --kolur270: #5d88b8b0;
+
+  --kolur3: #182536;     /* deep storm-sky */
+  --kolur370: #182536c7;
+
+  --kolur350: #24384dd9; /* clouded dusk glass */
+
+  --kolur4: #6f8fc7;     /* divine airy blue */
+  --kolur470: #6f8fc7c7;
+
+  --kolur5: #9fc0e6;     /* soft cloudlight */
+  --kolur6: #101a26;     /* midnight wind shadow */
+  --kolur7: #7fb6d9;     /* uplifting breeze highlight */
+
+  --kolur760: #5d88b840;
+  --kolur780: #6f8fc740;
+
+  --darkgray: #0d1620;   /* deep twilight */
+  --lightwhite: #9fc0e6cc; /* muted cloud wash */
+  --white: #d6e7fa;
+}
+
+/* ============================= */
+/* 🌬️ BACKGROUND */
+/* ============================= */
+
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://i.ibb.co/qYLYV77Y/Screenshot-2026-05-08-at-00-36-20.png') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: 'Marcellus', 'Cormorant Garamond', serif;
+
+    /* 🌬️ soft sky glow */
+    color: var(--kolur1) !important;
+  }
+}
+
+@media screen and (min-width: 801px){
+  body {
+    background: url('https://i.ibb.co/qYLYV77Y/Screenshot-2026-05-08-at-00-36-20.png') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Marcellus', 'Cormorant Garamond', serif;
+    font-size: 18px !important;
+
+    /* ⚡ readability */
+    color: var(--kolur1) !important;
+  } 
+}
+
+/* Cursor */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/cute-blue-cloud-cd782d94-css.webp') 0 0, auto !important;
+}
+
+/* ============================= */
+/* 🌌 CHAT */
+/* ============================= */
+
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(38, 56, 78, 0.55) !important; /* muted stormglass */
+    color: #9fc0e6 !important; /* cloud-blue text */
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(52, 74, 102, 0.45) !important; /* airy dusk blue */
+    color: #9fc0e6 !important;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(
+        90deg,
+        rgba(70, 100, 140, 0.65),   /* calm sky current */
+        rgba(120, 165, 210, 0.25)   /* soft breeze highlight */
+    ) !important;
+
+    color: #c4d8f0 !important; /* pale sky text */
+    box-shadow: 0 0 12px rgba(120, 165, 210, 0.25); /* airy glow */
+}
+
+.s-chat-message_timestamp {
+    color: #7fb6d9 !important; /* drifting breeze blue */
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #4e739c, #7fb6d9) !important; /* dusk → breeze */
+    color: #101a26 !important; /* deep twilight contrast */
+}
+
+/* ============================= */
+/* 🕊️ LOGO REPLACER */
+/* ============================= */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/fV10Rtck/Et-Mlogo-20260508004908.png');
+    width: 230px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+}
+
+/* ============================= */
+/* 🌤️ TOPBAR (Open Sky Tone) */
+/* ============================= */
+
+.container.topbar {
+    background: linear-gradient(
+        180deg,
+        rgba(42, 62, 88, 0.85),   /* deep evening sky */
+        rgba(60, 88, 120, 0.75)   /* softened airy blue */
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        inset 0 0 25px rgba(120,165,210,0.15),  /* drifting glow */
+        0 0 12px rgba(95,136,184,0.25),         /* soft stormlight */
+        1px 1px 5px rgba(0,0,0,0.35) !important;
+
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+}
+
+/* 🌤️ Welcome text */
+.welcomeback {
+    color: #9fc0e6 !important; /* soft cloud-blue */
+    font-size: 16px;
+    text-shadow: 0 0 6px rgba(120,165,210,0.35);
+}
+
+/* username link */
+.welcomeback a {
+    color: #7fb6d9 !important; /* breeze blue */
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(120,165,210,0.45);
+    transition: 0.5s;
+}
+
+.welcomeback a:hover {
+    color: #a8c7e8 !important; /* airy sky highlight */
+    text-shadow: 0 0 12px rgba(140,190,230,0.7);
+}
+
+/* ============================= */
+/* 🌤️ SKY LINKS */
+/* ============================= */
+
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* links */
+.toplinks li a {
+    color: #7fb6d9 !important; /* drifting breeze blue */
+    font-size: 15px;
+    text-decoration: none;
+
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    transition: 0.4s ease;
+
+    font-family: 'Marcellus', serif;
+}
+
+/* hover glow */
+.toplinks li a:hover {
+    color: #a8c7e8 !important; /* open-sky highlight */
+
+    background: rgba(70, 100, 140, 0.20); /* calm dusk wash */
+    box-shadow: 0 0 10px rgba(120, 165, 210, 0.25); /* airy glow */
+
+    text-shadow: 0 0 6px rgba(140, 190, 230, 0.55); /* soft sky shimmer */
+}
+
+/* ============================= */
+/* 🌬️ ICONS */
+/* ============================= */
+
+.toplinks img.icon {
+    filter:
+        drop-shadow(0 0 4px rgba(120, 165, 210, 0.35)) /* breeze glow */
+        brightness(1.05);
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter:
+        drop-shadow(0 0 8px rgba(168, 199, 232, 0.6)) /* airy sky glow */
+        brightness(1.15);
+}
+
+/* ============================= */
+/* ☁️ CURRENCY NUMBERS */
+/* ============================= */
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #8eb7dc !important; /* muted cloud-blue */
+    text-shadow: 0 0 6px rgba(142, 183, 220, 0.45); /* gentle breeze glow */
+}
+
+/* ============================= */
+/* 🌫️ LOGOUT */
+/* ============================= */
+
+.toplinks li a[href*="logout"] {
+    color: #5f88b5 !important; /* calm wind blue */
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(95, 136, 181, 0.18); /* softened dusk tint */
+    box-shadow: 0 0 12px rgba(140, 190, 230, 0.35); /* airy shimmer */
+}
+
+/* ============================= */
+/* 🌌 SKY CAVE IMAGE THEMING */
+/* ============================= */
+
+/* base cave image styling (DO NOT override specific banners) */
+div.cave-grid > img {
+	content: url('https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 0.78;
+    border-radius: 10px !important;
+    box-shadow: 0 0 14px rgba(120, 165, 210, 0.30) !important; /* drifting sky glow */
+    transition: 0.3s ease;
+}
+
+/* hover base */
+div.cave-grid > img:hover {
+    content: url('https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png') !important;
+    opacity: 1;
+    filter: brightness(1.15) contrast(1.1) saturate(1.2);
+}
+
+/* sky overview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/CKpyQ4fv/Screenshot-2026-05-08-at-02-05-04.png') !important;
+}
+
+/* sky overview hover */
+div.cave-grid > img[src$="prideoverview.png"]:hover {
+    content: url('https://i.ibb.co/CKpyQ4fv/Screenshot-2026-05-08-at-02-05-04.png') !important;
+	transition: 0.9s !important;
+}
+
+/* wandering lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/21W81pJF/Screenshot-2026-05-08-at-02-04-44.png') !important;
+}
+
+/* wandering lions hover */
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/21W81pJF/Screenshot-2026-05-08-at-02-04-44.png') !important;
+	transition: 0.9s !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/Nnr4f5wR/Screenshot-2026-05-08-at-02-04-56.png') !important;
+}
+
+/* nesting hover */
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/Nnr4f5wR/Screenshot-2026-05-08-at-02-04-56.png') !important;
+	transition: 0.9s !important;
+}
+
+/* regular caves */
+div.cave-grid > img[src$="cavedefault.jpg"] {
+    content: url("https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png") !important;
+}
+
+div.cave-grid > img[src$="cavedefault.jpg"]:hover {
+    content: url("https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png") !important;
+	transition: 0.9s !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png") !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"]:hover {
+    content: url("https://i.ibb.co/6JWX7C9v/Screenshot-2026-05-08-at-02-08-12.png") !important;
+	transition: 0.9s !important;
+}
+
+/* ============================= */
+/* ☁️ COMPANION OF THE WIND */
+/* ============================= */
+
+.lionImage img:first-child {
+    visibility: hidden;
+}
+
+.lionImage {
+    background: url('https://i.ibb.co/fVcm9cHq/Screenshot-2026-05-08-at-01-02-25.png') no-repeat !important;
+    background-size: cover;
+    box-shadow: 0 0 14px rgba(90, 135, 185, 0.30) !important; /* airy sky glow */
+}
+
+/* ============================= */
+/* 🌌 CLOUD SANCTUARY PANELS */
+/* ============================= */
+
+.cave-grid,
+.mound-grid {
+background: rgba(28, 44, 68, 0.72) !important; /* deep sky glass */
+    box-shadow: 0 0 14px rgba(90, 135, 185, 0.30) !important; /* calm breeze glow */
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #08111d;
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ SKY MOUNDS */
+/* ============================= */
+
+/* beetle mound */
+.mound-grid img {
+    background: url('https://i.ibb.co/wrx46KNz/Screenshot-2026-05-08-at-02-05-15.png') no-repeat center !important;
+    background-size: cover !important;
+
+    width: 170px !important;
+    height: 170px !important;
+
+    padding-top: 190px;
+    padding-right: 190px;
+
+    border-radius: 10px !important;
+    opacity: 0.8;
+
+    box-shadow: 0 0 14px rgba(120, 170, 220, 0.28) !important; /* drifting cloud glow */
+}
+
+/* hover */
+.mound-grid img:hover {
+    transition: 0.9s !important;
+    opacity: 1;
+}
+
+/* ============================= */
+/* 🌊 SKYFALL AVATARS */
+/* ============================= */
+
+div#lion_image {
+	opacity: .85;
+	box-shadow: 0 0 12px rgba(110, 165, 220, 0.25) !important;
+	border-radius: 6% !important;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-left: 6px;
+	transition: .6s ease;
+}
+
+div#lion_image:hover {
+	opacity: 1;
+	box-shadow: 0 0 18px rgba(150, 205, 255, 0.45) !important;
+	transition: .6s ease;
+}
+
+table#player img {
+	opacity: 0.85;
+	box-shadow: 0 0 10px rgba(90, 145, 200, 0.2) !important;
+	border-radius: 8px;
+}
+
+table#player img:hover {
+	opacity: 1;
+	box-shadow: 0 0 16px rgba(150, 205, 255, 0.35) !important;
+	transition: .6s ease;
+}
+
+/* ============================= */
+/* 🌤️ SKYBORNE NAVBAR */
+/* ============================= */
+
+.navbar {
+	background: #1b2a42; /* deep airy twilight blue */
+	border-bottom: 0px ridge !important;
+	border-radius: 10px;
+	box-shadow: inset 0 -40px 60px rgba(110, 160, 220, 0.15),
+	            0 0 8px rgba(120, 190, 255, 0.15) !important;
+	font-family: 'Cinzel', serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px !important;
+	color: #8fc7ff !important; /* drifting cloud blue */
+	font-family: 'Cinzel', serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background: #243856;
+	color: #c7e6ff !important;
+	text-shadow: 0 0 6px rgba(150, 210, 255, 0.5);
+	border-radius: 18px;
+	box-shadow: inset 0 0 18px rgba(110, 160, 220, 0.25);
+	transition: 0.7s !important;
+}
+
+/* ============================= */
+/* 🌌 WIND TEMPLE PANEL */
+/* ============================= */
+
+.container.main {
+	background: rgba(16, 24, 40, 0.92) !important;
+	border-left: 0px ridge;
+	border-right: 0px ridge;
+	border-bottom: 0px ridge;
+	border-radius: 10px;
+	box-shadow: inset 0 0 90px rgba(110, 160, 220, 0.12),
+	            0 0 8px rgba(120, 190, 255, 0.08) !important;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ SKY PANEL */
+/* ============================= */
+
+.col-md-9 {
+	background: none;
+	border-right: none;
+	color: #d6eaff !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================= */
+/* ☁️ BREADCRUMB TRAIL */
+/* ============================= */
+
+.breadcrumb {
+	background: #22334d !important;
+	border: 0px ridge !important;
+	border-radius: 5px;
+	box-shadow: inset 0 0 18px rgba(150, 210, 255, 0.12),
+	            0 0 6px rgba(110, 160, 220, 0.1) !important;
+	font-family: 'Cinzel', serif;
+}
+
+.breadcrumb .active {
+	color: #8fc7ff;
+	font-size: 18px !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🪽 MESSENGER BUTTONS */
+/* ============================= */
+
+input.floatright {
+	background: rgba(110, 160, 220, 0.15) !important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #d6eaff !important;
+	text-shadow: 0 0 4px rgba(150, 210, 255, 0.2) !important;
+	box-shadow: inset 0 0 18px rgba(110, 160, 220, 0.2),
+	            0 0 6px rgba(90, 140, 210, 0.1) !important;
+	font-family: 'Cinzel', serif;
+}
+
+input.floatright:hover {
+	background: rgba(150, 210, 255, 0.18) !important;
+	box-shadow: inset 0 0 22px rgba(150, 210, 255, 0.3),
+	            0 0 10px rgba(150, 210, 255, 0.2) !important;
+	transition: .7s !important;
+}
+
+button.button {
+	background: #1b2a42;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #8fc7ff;
+	font-size: 18px !important;
+	text-shadow: 0 0 4px rgba(150, 210, 255, 0.2);
+	box-shadow: inset 0 0 18px rgba(110, 160, 220, 0.15),
+	            0 0 6px rgba(120, 190, 255, 0.1) !important;
+	font-family: 'Cinzel', serif;
+}
+
+button.button:hover {
+	background: #243856;
+	color: #dff1ff;
+	box-shadow: inset 0 0 24px rgba(150, 210, 255, 0.25),
+	            0 0 12px rgba(150, 210, 255, 0.2) !important;
+	transition: .7s !important;
+}
+
+/* ============================= */
+/* ☁️ CLOUD COMMENT BOX */
+/* ============================= */
+
+#commentBox {
+	background: rgba(28, 40, 64, 0.55) !important; /* twilight cloud glass */
+	box-shadow: inset 0 0 18px rgba(120, 190, 255, 0.12),
+	            0 0 8px rgba(150, 210, 255, 0.18) !important;
+	border: none !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+::placeholder {
+	color: #cfe6ff !important; /* airy mist text */
+	font-family: 'Cormorant Garamond', serif;
+}
+
+div.comment {
+	background: rgba(36, 52, 78, 0.55); /* drifting dusk blue */
+	box-shadow: inset 0 0 18px rgba(120, 190, 255, 0.10),
+	            0 0 8px rgba(150, 210, 255, 0.15) !important;
+	font-weight: bold;
+	color: #e0efff; /* cloudlit white-blue */
+	font-family: 'Cormorant Garamond', serif;
+}
+
+input#comment {
+	background: rgba(120, 190, 255, 0.14) !important; /* sky breeze glow */
+	color: #101a2c !important; /* deep wind-shadow contrast */
+	border-radius: 10px !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+small.text-muted {
+	color: #bddbff; /* faded cloud tone */
+	font-family: 'Cormorant Garamond', serif;
+}
+
+small.text-muted a {
+	color: #8fc7ff; /* messenger blue */
+	font-family: 'Cinzel', serif;
+}
+
+input[type="button"].bad {
+	background: #8fc7ff !important; /* divine wind sigil */
+	border-radius: 10px !important;
+	color: #101a2c !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌬️ GENERAL SKY ALERT */
+.alert {
+	background: #1b2a42; /* deep twilight sky */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #9fd4ff !important; /* airy messenger blue */
+	box-shadow: #6eaee666 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* ⚠️ STORM WARNING ALERT */
+.alert-warning{
+	background: #243856; /* clouded dusk blue */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #d6ecff !important; /* pale cloudlight */
+	box-shadow: #9fd4ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* ❗ NIGHT SKY ALERT */
+.alert-danger {
+	background: #101a2c !important; /* deep wind-shadow */
+	text-align: center;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #e4f3ff !important; /* glowing cloud white */
+	box-shadow: #6eaee666 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* 🪽 SKY PANELS / FEATURE BOXES */
+.feature,
+div.left {
+	background: #1b2a42 !important; /* drifting twilight blue */
+	box-shadow: #6eaee644 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border: none!important;
+	color: #d6ecff !important; /* airy cloud text */
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* 🧱 MAIN SKY PANELS */
+.panel {
+	background: #101a2c !important; /* deep horizon shadow */
+	border: 0px ridge !important;
+	border-radius: 10px;
+	color:#e4f3ff !important;
+	box-shadow: #6eaee633 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* 🔤 TEXT INSIDE BARS */
+.progress div {
+	color: #e4f3ff !important;
+	font-size: 13px !important;
+	text-shadow: 1px 1px 1px #000 !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* 🪶 BAR BACKGROUND */
+.progress {
+	background: linear-gradient(#101a2c, #1b2a42);
+	box-shadow:1px 1px 5px #000 !important;
+	border-radius: 20px;
+}
+
+/* ⚡ WIND ENERGY BAR */
+.progress-bar-warning {
+   background: linear-gradient(#9fd4ff, #6eaee6)!important;
+}
+
+/* 🌬️ CLOUD HUNGER BAR */
+.progress-bar-danger {
+    background: linear-gradient(#6eaee6, #d6ecff)!important;
+}
+
+/* ✨ DIVINE XP BAR */
+.progress-bar-success {
+    background: linear-gradient(#e4f3ff, #9fd4ff)!important;
+}
+
+/* 📊 GENERAL SKY BAR */
+.progress-bar {
+    background: linear-gradient(#6eaee6, #9fd4ff);
+	border-radius: 20px;
+	box-shadow:1px 1px 5px #000 !important;
+}
+
+/* 🏆 CELESTIAL ACHIEVEMENT BAR */
+div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
+	background: linear-gradient(#9fd4ff, #6eaee6)!important;
+}
+
+/* 📈 WINDFARING ACCOUNT STANDING */
+th > div > div.progress-bar.progress-bar-success {
+    background: linear-gradient(#6eaee6, #d6ecff)!important;
+}
+
+/* ☁️ MAIN HEADER */
+h1 {
+	color: #9fd4ff;
+	font-size: 72px;
+	font-family: 'Cinzel', serif; /* divine sky serif */
+	text-align: center;
+	text-shadow: 0 0 12px #6eaee6;
+}
+
+/* ☁️ SKY SUB HEADER */
+h2 {
+	color: #d6ecff;
+	font-size: 56px;
+	text-align: center;
+	text-shadow: 0 0 10px #9fd4ff;
+	font-family: 'Cinzel', serif;
+}
+
+/* ☁️ SMALL CLOUD HEADER */
+h3 {
+	color: #e4f3ff !important;
+	font-size: 22px !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* ⚡ WIND GLOW HOVER */
+h3:hover {
+	color: #6eaee6 !important;
+	transition: .7s!important;
+}
+
+/* 🪽 MAIN SKY TABLE */
+.table {
+	background: #101a2c; /* deep horizon twilight */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 8px #6eaee633;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap');
+
+/* ============================= */
+/* 🌬️ WIND LINK COLORS */
+/* ============================= */
+
+.table a:link,
+.table a:visited {
+	color: #6eaee6 !important; /* airy sky blue */
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #9fd4ff !important; /* bright cloudlight */
+	transition: 0.5s!important;
+}
+
+.table a:hover {
+	color: #d6ecff !important; /* glowing mist blue */
+	transform: scale(1.05);
+	transition: 0.7s!important;
+}
+
+/* ============================= */
+/* ⚡ CELESTIAL HEADER ROWS */
+/* ============================= */
+
+.top,
+.bottom,
+th {
+	background: #1b2a42 !important; /* drifting dusk sky */
+	box-shadow: 0 0 12px #6eaee666 inset, 1px 1px 5px #000 !important;
+	color: #d6ecff !important; /* cloudlit text */
+	font-size: 18px !important;
+	border-radius: 10px;
+	font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌬️ SIDE SKY PANEL */
+/* ============================= */
+
+.table .left {
+	background: #162338 !important; /* stormwind blue */
+	box-shadow: 0 0 10px #6eaee633 inset !important;
+	border-radius: 10px;
+}
+
+/* ============================= */
+/* ⚡ WIND INPUT FIELDS */
+/* ============================= */
+
+input,
+select,
+textarea {
+	background: #101a2c !important; /* night-sky blue */
+	border: 0px ridge !important;
+	box-shadow: 0 0 10px #6eaee633 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	color: #e4f3ff !important; /* pale sky text */
+	text-shadow: 1px 1px 2px #000 !important;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ INNER SKY TABLE */
+/* ============================= */
+
+.inner-table .left {
+	background: #1b2a42 !important;
+	color: #9fd4ff !important;
+	box-shadow: 0 0 10px #6eaee633 inset, 1px 1px 5px #000 !important;
+}
+
+.inner-table .right {
+	background: #101a2c !important;
+	box-shadow: 0 0 12px #6eaee644 inset, 1px 1px 5px #000 !important;
+	color: #d6ecff !important;
+	border-radius: 10px;
+}
+
+.right_odd {
+	background: #0d1624 !important;
+	box-shadow: 0 0 10px #6eaee622 inset !important;
+}
+
+/* ============================= */
+/* ⚡ CLOUD ITEM HEADERS */
+/* ============================= */
+
+.item-header {
+	background: #1b2a42 !important;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #6eaee644 inset !important;
+	color: #9fd4ff !important;
+	font-size: 15px !important;
+	font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌬️ SKY ITEM BOXES */
+/* ============================= */
+
+.item {
+	background: #101a2c !important;
+	box-shadow: 0 0 12px #6eaee633 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+	color: #e4f3ff;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.item-footer {
+	background: #0d1624;
+}
+
+/* ============================= */
+/* 🌬️ WIND SLIDER */
+/* ============================= */
+
+div.slider.round {
+	background: #6eaee6 !important; /* drifting sky blue */
+}
+
+div.slider.round::before {
+	background: #d6ecff !important; /* cloudlight glow */
+}
+
+/* ============================= */
+/* ☁️ SKY BOXES */
+/* ============================= */
+
+.Box1,
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #1b2a42, #101a2c);
+	color: #e4f3ff;
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow: 0 0 20px #6eaee622 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: 1s;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ CLOUD SCROLLBAR */
+/* ============================= */
+
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: #0d1624;
+	box-shadow: 0 0 10px #6eaee622 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #6eaee6;
+	box-shadow: 0 0 12px #6eaee655 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+/* ============================= */
+/* ⚡ SKY CREDITS (DO NOT REMOVE) */
+/* ============================= */
+
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: #9fd4ff;
+	text-shadow: 1px 1px 1.5px #0d1624; 
+	font-size: 17px !important; 
+	position: absolute; 
+	right: 13%; 
+	z-index: 100;
+	font-family: 'Cinzel', serif;
+}
+
+/* ☁️ DYNASTY LIST */
+.dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	transition: 0.8s ease;
+	box-shadow: 1px 1px 5px #0d1624;
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.dynastylist a {
+	display: block;
+}
+
+/* shared behavior fix */
+.dynastylist .left {
+	display: block;
+}
+
+/* ☁️ Dynasty */
+div.left img {
+    content: url('https://i.ibb.co/20FgJSwr/Screenshot-2026-05-08-at-02-05-28.png') !important;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 150px;
+    max-width: 150px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/* ✨ celestial hover glow */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+	box-shadow:
+		0 0 10px #6eaee655,
+		0 0 20px #9fd4ff33,
+		1px 1px 5px #0d1624;
+	filter: brightness(1.2) saturate(1.25);
+}
+
+/* ☁️ BACKGROUND TABLE */
+.table {
+	background: #101a2c;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 10px #6eaee633;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* 🌬️ SKY LINK COLORS */
+.table a:link {
+	color: #6eaee6 !important; /* messenger sky blue */
+	transition: 0.5s!important;
+}
+
+.table a:visited {
+	color: #6eaee6 !important;
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #d6ecff !important; /* cloud flash */
+	transition: 0.5s!important;
+} 
+
+.table a:hover {
+	color: #9fd4ff !important; /* glowing windlight */
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+}
+
+/* ============================= */
+/* ☁️ SKY CONTAINER */
+/* ============================= */
+.boxcontainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* ============================= */
+/* 🌬️ CLOUD BOX */
+/* ============================= */
+.box {
+    flex: 1;
+    height: 240px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(27, 42, 66, 0.95),   /* drifting twilight sky */
+        rgba(10, 18, 32, 0.95)    /* deep horizon blue */
+    ) !important;
+
+    color: #d6ecff; /* airy cloudlight */
+    padding: 12px;
+
+    border: 1px solid rgba(110, 174, 230, 0.35); /* windlit outline */
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.7),
+        inset 0 0 25px rgba(110,174,230,0.10),
+        0 0 8px rgba(159,212,255,0.18);
+
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    transition: all 0.35s ease;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* ⚡ CELESTIAL HOVER */
+/* ============================= */
+.box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(110,174,230,0.35),
+        inset 0 0 35px rgba(159,212,255,0.18);
+
+    border-color: rgba(159,212,255,0.45);
+}
+
+/* ============================= */
+/* 🖼️ IMAGE SAFETY */
+/* ============================= */
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+    box-shadow: 0 0 10px rgba(110,174,230,0.18);
+}
+
+/* ============================= */
+/* 🔤 SKY HEADINGS */
+/* ============================= */
+.box h3 {
+    color: #9fd4ff; /* divine windlight */
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 18px;
+
+    text-shadow: 0 0 8px rgba(110,174,230,0.5);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 📜 CLOUD SCROLLBAR */
+/* ============================= */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(10,18,32,0.9);
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#6eaee6, #9fd4ff);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(110,174,230,0.4);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 767px) {
+    .boxcontainer {
+        flex-direction: column;
+    }
+
+    .box {
+        height: auto;
+    }
+}
+
+/* 🌬️ PARTICLES */
+.firefly::before {
+    background: #6eaee6; /* soft sky wind blue */
+    opacity: 0.4;
+    animation: drift ease-in-out infinite alternate;
+    font-family: 'Cinzel', serif;
+}
+
+.firefly::after {
+    background: #9fd4ff; /* light cloud glow */
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #6eaee6;
+    animation: drift ease-in-out infinite alternate, flash ease-in-out infinite;
+    font-family: 'Cinzel', serif;
+}
+
+/* 🌬️ MOVEMENT SET 12 */
+.firefly:nth-child(12) {
+  animation-name: move12;
+}
+.firefly:nth-child(12)::before {
+  animation-duration: 14s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 14s, 7600ms;
+  animation-delay: 0ms, 3200ms;
+}
+
+@keyframes move12 {
+  0% { transform: translateX(12vw) translateY(-18vh) scale(0.6); }
+  25% { transform: translateX(-28vw) translateY(22vh) scale(0.75); }
+  50% { transform: translateX(18vw) translateY(30vh) scale(0.9); }
+  75% { transform: translateX(-14vw) translateY(-20vh) scale(0.65); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.6); }
+}
+
+.firefly:nth-child(12)::before {
+  animation-duration: 13s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 13s, 7200ms;
+  animation-delay: 0ms, 2400ms;
+}
+
+/* 🌬️ MOVEMENT SET 13 */
+.firefly:nth-child(13) {
+  animation-name: move13;
+}
+.firefly:nth-child(13)::before {
+  animation-duration: 11s;
+}
+.firefly:nth-child(13)::after {
+  animation-duration: 11s, 8200ms;
+  animation-delay: 0ms, 1800ms;
+}
+
+@keyframes move13 {
+  0% { transform: translateX(24vw) translateY(18vh) scale(0.5); }
+  25% { transform: translateX(-40vw) translateY(34vh) scale(0.8); }
+  50% { transform: translateX(12vw) translateY(-18vh) scale(0.95); }
+  75% { transform: translateX(-30vw) translateY(-10vh) scale(0.65); }
+  100% { transform: translateX(14vw) translateY(26vh) scale(0.55); }
+}
+
+/* 🌬️ MOVEMENT SET 14 */
+.firefly:nth-child(14) {
+  animation-name: move14;
+}
+.firefly:nth-child(14)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(14)::after {
+  animation-duration: 15s, 8800ms;
+  animation-delay: 0ms, 6000ms;
+}
+
+@keyframes move14 {
+  0% { transform: translateX(18vw) translateY(-26vh) scale(0.85); }
+  25% { transform: translateX(-45vw) translateY(-12vh) scale(0.95); }
+  50% { transform: translateX(14vw) translateY(-8vh) scale(0.7); }
+  75% { transform: translateX(-20vw) translateY(32vh) scale(0.6); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.6); }
+}
+
+/* 🌬️ MOVEMENT SET 15 */
+.firefly:nth-child(15) {
+  animation-name: move15;
+}
+.firefly:nth-child(15)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(15)::after {
+  animation-duration: 16s, 6800ms;
+  animation-delay: 0ms, 5200ms;
+}
+
+@keyframes move15 {
+  0% { transform: translateX(-10vw) translateY(-22vh) scale(0.8); }
+  25% { transform: translateX(42vw) translateY(-14vh) scale(0.65); }
+  50% { transform: translateX(-25vw) translateY(34vh) scale(0.85); }
+  75% { transform: translateX(28vw) translateY(28vh) scale(0.6); }
+  100% { transform: translateX(16vw) translateY(46vh) scale(1); }
+}
+
+/* 🌬️ SHARED MOTION EFFECT (wind flow) */
+@keyframes drift {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
