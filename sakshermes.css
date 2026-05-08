@@ -54,7 +54,7 @@ READ ME:
 
     font-family: 'Cinzel', 'Cormorant Garamond', serif;
 
-    /* 🌬️ sky-light glow text */
+    /* 🌬️ glow text */
     color: var(--kolur1) !important;
   }
 }
@@ -83,28 +83,28 @@ READ ME:
 /* ============================= */
 
 #chatMessageList .s-chat-message:nth-child(even) {
-    background: rgba(210, 240, 255, 0.55) !important; /* soft sky glass */
-    color: #08324a !important; /* deep sea ink text */
+    background: rgba(60, 42, 30, 0.55) !important; /* warm walnut glass */
+    color: #f3e2c7 !important; /* parchment text */
 }
 
 #chatMessageList .s-chat-message:nth-child(odd) {
-    background: rgba(180, 225, 255, 0.45) !important; /* airy cloud blue */
-    color: #08324a !important;
+    background: rgba(85, 60, 42, 0.45) !important; /* soft leather brown */
+    color: #f3e2c7 !important;
 }
 
 .s-chat-message__pinned {
     background: linear-gradient(
         90deg,
-        rgba(170, 230, 255, 0.65),
-        rgba(255, 220, 140, 0.25) /* Hermes gold spark */
+        rgba(120, 85, 55, 0.65),   /* aged wood glow */
+        rgba(180, 145, 95, 0.25)   /* antique gold parchment highlight */
     ) !important;
 
-    color: #062636 !important;
-    box-shadow: 0 0 12px rgba(120, 200, 255, 0.25);
+    color: #f6e7d3 !important; /* warm parchment light */
+    box-shadow: 0 0 12px rgba(180, 145, 95, 0.25); /* soft golden glow */
 }
 
 .s-chat-message_timestamp {
-    color: #2a7aa6 !important; /* sky rune blue */
+    color: #b08a5a !important; /* antique bronze timestamp */
 }
 
 div#chatMessageContainer {
@@ -112,8 +112,8 @@ div#chatMessageContainer {
 }
 
 button#label_currentChannel {
-    background: linear-gradient(90deg, #9fdcff, #ffd78a) !important; /* sky → gold */
-    color: #062636 !important;
+    background: linear-gradient(90deg, #7a5537, #c49a6c) !important; /* leather → gold */
+    color: #1a120e !important; /* ink-dark brown */
 }
 
 /* ============================= */
@@ -128,45 +128,45 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 }
 
 /* ============================= */
-/* 🌤️ TOPBAR) */
+/* 🪶 TOPBAR (Hermes parchment / courier tone) */
 /* ============================= */
 
 .container.topbar {
     background: linear-gradient(
         180deg,
-        rgba(200, 235, 255, 0.85),
-        rgba(170, 220, 255, 0.75)
+        rgba(92, 66, 48, 0.85),   /* warm walnut */
+        rgba(120, 85, 60, 0.75)   /* soft leather brown */
     ) !important;
 
     border-radius: 12px !important;
 
     box-shadow:
-        inset 0 0 25px rgba(120,200,255,0.18),
-        0 0 12px rgba(255,215,130,0.25),
-        1px 1px 5px rgba(0,0,0,0.25) !important;
+        inset 0 0 25px rgba(180,145,95,0.15),  /* muted gold glow */
+        0 0 12px rgba(120,85,60,0.25),         /* warm leather shadow */
+        1px 1px 5px rgba(0,0,0,0.35) !important;
 
     padding: 10px 15px !important;
     backdrop-filter: blur(6px);
 }
 
-/* 🌤️ Welcome text */
+/* 🪶 Welcome text */
 .welcomeback {
-    color: #1a4f6b !important;
+    color: #f3e2c7 !important; /* parchment text */
     font-size: 16px;
-    text-shadow: 0 0 6px rgba(120,200,255,0.35);
+    text-shadow: 0 0 6px rgba(180,145,95,0.35);
 }
 
 /* username link */
 .welcomeback a {
-    color: #2f86c7 !important;
+    color: #c49a6c !important; /* soft leather gold */
     font-weight: bold;
-    text-shadow: 0 0 8px rgba(120,200,255,0.55);
+    text-shadow: 0 0 8px rgba(180,145,95,0.45);
     transition: 0.5s;
 }
 
 .welcomeback a:hover {
-    color: #ffd78a !important;
-    text-shadow: 0 0 12px rgba(255,215,130,0.8);
+    color: #e2c08d !important; /* antique gold highlight */
+    text-shadow: 0 0 12px rgba(210,170,110,0.7);
 }
 
 /* ============================= */
@@ -181,7 +181,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* links */
 .toplinks li a {
-    color: #2a7aa6 !important; /* sky script blue */
+    color: #c49a6c !important; /* soft leather script */
     font-size: 15px;
     text-decoration: none;
 
@@ -193,12 +193,12 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* hover glow */
 .toplinks li a:hover {
-    color: #ffd78a !important; /* Hermes gold flash */
+    color: #e2c08d !important; /* antique gold highlight */
 
-    background: rgba(120, 200, 255, 0.15);
-    box-shadow: 0 0 10px rgba(120, 200, 255, 0.25);
+    background: rgba(120, 85, 60, 0.20); /* warm leather wash */
+    box-shadow: 0 0 10px rgba(180, 145, 95, 0.25); /* muted gold glow */
 
-    text-shadow: 0 0 6px rgba(255, 215, 130, 0.6);
+    text-shadow: 0 0 6px rgba(180, 145, 95, 0.55); /* parchment shimmer */
 }
 
 /* ============================= */
@@ -207,16 +207,16 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 .toplinks img.icon {
     filter:
-        drop-shadow(0 0 4px rgba(120, 200, 255, 0.35))
-        brightness(1.1);
+        drop-shadow(0 0 4px rgba(180, 145, 95, 0.35)) /* muted bronze glow */
+        brightness(1.05);
 
     transition: 0.4s ease;
 }
 
 .toplinks li a:hover img.icon {
     filter:
-        drop-shadow(0 0 8px rgba(255, 215, 130, 0.6))
-        brightness(1.2);
+        drop-shadow(0 0 8px rgba(194, 154, 108, 0.6)) /* antique gold glow */
+        brightness(1.15);
 }
 
 /* ============================= */
@@ -225,8 +225,8 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 #silverBeetlesAmt,
 #goldBeetlesAmt {
-    color: #2a7aa6 !important;
-    text-shadow: 0 0 6px rgba(120, 200, 255, 0.45);
+    color: #c9a06a !important; /* worn bronze coin */
+    text-shadow: 0 0 6px rgba(201, 160, 106, 0.45); /* soft gold patina glow */
 }
 
 /* ============================= */
@@ -234,12 +234,12 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 /* ============================= */
 
 .toplinks li a[href*="logout"] {
-    color: #3c8fc7 !important;
+    color: #8b5a2b !important; /* warm clay brown */
 }
 
 .toplinks li a[href*="logout"]:hover {
-    background: rgba(255, 215, 130, 0.18);
-    box-shadow: 0 0 12px rgba(255, 215, 130, 0.35);
+    background: rgba(139, 90, 43, 0.18); /* soft leather tint */
+    box-shadow: 0 0 12px rgba(181, 136, 84, 0.35); /* faded gold-brown glow */
 }
 
 /* ============================= */
@@ -253,7 +253,7 @@ div.cave-grid > img {
     width: 250px;
     opacity: 0.78;
     border-radius: 10px !important;
-    box-shadow: 0 0 14px rgba(54, 198, 255, 0.28) !important; /* sky glow */
+    box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
     transition: 0.3s ease;
 }
 
@@ -327,7 +327,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 .lionImage {
     background: url('https://i.ibb.co/fVcm9cHq/Screenshot-2026-05-08-at-01-02-25.png') no-repeat !important;
     background-size: cover;
-    box-shadow: 0 0 22px rgba(168, 120, 255, 0.22); /* divine violet glow */
+    box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
 }
 
 /* ============================= */
@@ -336,10 +336,8 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 
 .cave-grid,
 .mound-grid {
-    background: rgba(8, 14, 28, 0.72) !important; /* night sky base */
-    box-shadow:
-        inset 0 0 25px rgba(54,198,255,0.08),
-        0 0 10px rgba(0,0,0,0.55) !important;
+background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
+    box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
     border-radius: 12px !important;
     text-shadow: 1px 1px 1.5px #050816;
     max-height: 175px;
@@ -364,7 +362,7 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
     border-radius: 10px !important;
     opacity: 0.8;
 
-    box-shadow: 1px 1px 6px rgba(54,198,255,0.18)!important;
+    box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
 }
 
 /* hover */
@@ -379,183 +377,183 @@ div.cave-grid > img[src$="caveunused.jpg"]:hover {
 /* ============================= */
 
 #commentBox {
-	background: rgba(18, 26, 44, 0.55) !important; /* twilight sky glass */
-	box-shadow: inset 0 0 18px rgba(111, 211, 255, 0.12),
-	            0 0 8px rgba(255, 211, 111, 0.18) !important;
+	background: rgba(44, 30, 22, 0.55) !important; /* warm leather glass */
+	box-shadow: inset 0 0 18px rgba(180, 145, 95, 0.12),
+	            0 0 8px rgba(194, 154, 108, 0.18) !important;
 	border: none !important;
 }
 
 ::placeholder {
-	color: #dff6ff !important; /* soft cloud white-blue */
+	color: #f3e2c7 !important; /* parchment light */
 }
 
 div.comment {
-	background: rgba(20, 30, 60, 0.55); /* deep sky layer */
-	box-shadow: inset 0 0 18px rgba(111, 211, 255, 0.10),
-	            0 0 8px rgba(255, 211, 111, 0.15) !important;
+	background: rgba(60, 42, 30, 0.55); /* deep walnut layer */
+	box-shadow: inset 0 0 18px rgba(180, 145, 95, 0.10),
+	            0 0 8px rgba(194, 154, 108, 0.15) !important;
 	font-weight: bold;
-	color: #f5fbff; /* airy cloud white */
+	color: #f6e7d3; /* warm parchment white */
 }
 
 input#comment {
-	background: rgba(111, 211, 255, 0.14) !important; /* sky glow */
-	color: #0b1020 !important; /* deep night contrast */
+	background: rgba(180, 145, 95, 0.14) !important; /* soft bronze wash */
+	color: #1a120e !important; /* ink brown contrast */
 	border-radius: 10px !important;
 }
 
 small.text-muted {
-	color: #cfefff;
+	color: #e7d6b8; /* faded parchment */
 }
 
 small.text-muted a {
-	color: #ffd36f; /* Hermes gold accent */
+	color: #c49a6c; /* antique leather gold */
 }
 
 input[type="button"].bad {
-	background: #ffd36f !important; /* divine gold */
+	background: #c49a6c !important; /* worn gold seal */
 	border-radius: 10px !important;
-	color: #0b1020 !important;
+	color: #1a120e !important;
 }
 
 /* ⚡ GENERAL ALERT */
 .alert {
-	background: #0b1020; /* night sky base */
+	background: #2a1f1a; /* deep leather base */
 	border: 0px ridge;
 	text-align: center;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	float: none;
-	color: #6fd3ff !important; /* messenger glow blue */
-	box-shadow: #6fd3ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	color: #e2c08d !important; /* antique gold text */
+	box-shadow: #c49a6c66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
 }
 
 /* ⚠️ WARNING ALERT */
 .alert-warning{
-	background: #121a33; /* storm sky */
+	background: #3a2a22; /* warm walnut */
 	border: 0px ridge;
 	text-align: center;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	float: none;
-	color: #ffd36f !important; /* golden warning */
-	box-shadow: #ffd36f66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	color: #f3e2c7 !important; /* parchment gold */
+	box-shadow: #e2c08d66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
 }
 
 /* ❗ DANGER ALERT */
 .alert-danger {
-	background: #080c18 !important; /* deep void sky */
+	background: #1a120e !important; /* ink leather dark */
 	text-align: center;
 	border: 0px ridge;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	float: none;
-	color: #f5fbff !important; /* lightning white */
-	box-shadow: #6fd3ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	color: #f6e7d3 !important; /* parchment light */
+	box-shadow: #c49a6c66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
 }
 
 /* 🪽 SIDE BOXES / FEATURE PANELS */
 .feature,
 div.left {
-	background: #111a2e !important; /* sky-panel blue */
-	box-shadow: #6fd3ff44 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
+	background: #2a1f1a !important; /* leather panel */
+	box-shadow: #c49a6c44 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	border: none!important;
-	color: #dff6ff !important; /* airy glow text */
+	color: #f3e2c7 !important; /* parchment text */
 }
 
 /* 🧱 MAIN PANELS */
 .panel {
-	background: #0b1020 !important; /* deep Olympus night */
+	background: #1a120e !important; /* deep leather shadow */
 	border: 0px ridge !important;
 	border-radius: 10px;
-	color:#eaf7ff !important;
-	box-shadow: #6fd3ff33 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+	color:#f6e7d3 !important;
+	box-shadow: #c49a6c33 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
 }
 
 /* 🔤 TEXT INSIDE BARS */
 .progress div {
-	color: #f5fbff !important;
+	color: #f6e7d3 !important;
 	font-size: 13px !important;
 	text-shadow: 1px 1px 1px #000 !important;
 }
 
 /* 🪶 BAR BACKGROUND */
 .progress {
-	background: linear-gradient(#0b1020, #111a2e);
+	background: linear-gradient(#1a120e, #2a1f1a);
 	box-shadow:1px 1px 5px #000 !important;
 	border-radius: 20px;
 }
 
 /* ⚡ ENERGY BAR */
 .progress-bar-warning {
-   background: linear-gradient(#ffd36f, #6fd3ff)!important;
+   background: linear-gradient(#e2c08d, #c49a6c)!important;
 }
 
 /* 🌬️ HUNGER BAR */
 .progress-bar-danger {
-    background: linear-gradient(#6fd3ff, #f5fbff)!important;
+    background: linear-gradient(#c49a6c, #f3e2c7)!important;
 }
 
 /* ✨ XP BAR */
 .progress-bar-success {
-    background: linear-gradient(#f5fbff, #ffd36f)!important;
+    background: linear-gradient(#f6e7d3, #e2c08d)!important;
 }
 
 /* 📊 GENERAL BAR STYLE */
 .progress-bar {
-    background: linear-gradient(#6fd3ff, #ffd36f);
+    background: linear-gradient(#c49a6c, #e2c08d);
 	border-radius: 20px;
 	box-shadow:1px 1px 5px #000 !important;
 }
 
 /* 🏆 ACHIEVEMENT BAR */
 div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
-	background: linear-gradient(#ffd36f, #6fd3ff)!important;
+	background: linear-gradient(#e2c08d, #c49a6c)!important;
 }
 
 /* 📈 ACCOUNT STANDING */
 th > div > div.progress-bar.progress-bar-success {
-    background: linear-gradient(#6fd3ff, #f5fbff)!important;
+    background: linear-gradient(#c49a6c, #f3e2c7)!important;
 }
 
 /* ☁️ MAIN HEADER */
 h1 {
-	color: #ffd36f;
+	color: #e2c08d;
 	font-size: 72px;
-	font-family: 'Cinzel', serif; /* mythic divine serif */
+	font-family: 'Cinzel', serif; /* keeps mythic feel */
 	text-align: center;
-	text-shadow: 0 0 12px #6fd3ff;
+	text-shadow: 0 0 12px #c49a6c;
 }
 
 /* ☁️ SUB HEADER */
 h2 {
-	color: #dff6ff;
+	color: #f3e2c7;
 	font-size: 56px;
 	text-align: center;
-	text-shadow: 0 0 10px #ffd36f;
+	text-shadow: 0 0 10px #e2c08d;
 }
 
 /* ☁️ SMALL HEADER */
 h3 {
-	color: #f5fbff !important;
+	color: #f6e7d3 !important;
 	font-size: 22px !important;
 }
 
 /* ⚡ HOVER EFFECT */
 h3:hover {
-	color: #6fd3ff !important;
+	color: #c49a6c !important;
 	transition: .7s!important;
 }
 
 /* 🏛️ MAIN LION INFO TABLE */
 .table {
-	background: #0b1020; /* celestial night base */
+	background: #1a120e; /* parchment-shadow base */
 	border: 0px ridge;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	border-collapse: separate;
-	box-shadow: 0 0 8px #6fd3ff33;
+	box-shadow: 0 0 8px #c49a6c33;
 }
 
 /* font */
@@ -567,17 +565,17 @@ h3:hover {
 
 .table a:link,
 .table a:visited {
-	color: #6fe7ff !important; /* sky-glow cyan */
+	color: #c49a6c !important; /* soft leather brown */
 	transition: 0.5s!important;
 }
 
 .table a:active {
-	color: #bff8ff !important; /* lightning flash */
+	color: #e2c08d !important; /* light parchment gold-brown */
 	transition: 0.5s!important;
 }
 
 .table a:hover {
-	color: #a6fff2 !important; /* ethereal mist glow */
+	color: #f3e2c7 !important; /* pale parchment glow */
 	transform: scale(1.05);
 	transition: 0.7s!important;
 }
@@ -589,9 +587,9 @@ h3:hover {
 .top,
 .bottom,
 th {
-	background: #102a3a !important; /* deep sky dusk */
-	box-shadow: 0 0 12px #36c6ff66 inset, 1px 1px 5px #000 !important;
-	color: #a6fff2 !important; /* celestial mint */
+	background: #3a2a22 !important; /* deep walnut */
+	box-shadow: 0 0 12px #c49a6c66 inset, 1px 1px 5px #000 !important;
+	color: #f3e2c7 !important; /* parchment text */
 	font-size: 18px !important;
 	border-radius: 10px;
 	font-family: 'MedievalSharp', cursive;
@@ -602,8 +600,8 @@ th {
 /* ============================= */
 
 .table .left {
-	background: #0b1f2b !important; /* night sky blue */
-	box-shadow: 0 0 10px #36c6ff33 inset !important;
+	background: #2a1f1a !important; /* leather brown */
+	box-shadow: 0 0 10px #c49a6c33 inset !important;
 	border-radius: 10px;
 }
 
@@ -614,11 +612,11 @@ th {
 input,
 select,
 textarea {
-	background: #081822 !important;
+	background: #1a120e !important; /* dark leather */
 	border: 0px ridge !important;
-	box-shadow: 0 0 10px #36c6ff33 inset, 1px 1px 5px #000 !important;
+	box-shadow: 0 0 10px #c49a6c33 inset, 1px 1px 5px #000 !important;
 	border-radius: 10px;
-	color: #d6f7ff !important;
+	color: #f6e7d3 !important; /* parchment text */
 	text-shadow: 1px 1px 2px #000 !important;
 	font-family: 'EB Garamond', serif;
 }
@@ -628,21 +626,21 @@ textarea {
 /* ============================= */
 
 .inner-table .left {
-	background: #0c2230 !important;
-	color: #6fe7ff !important;
-	box-shadow: 0 0 10px #36c6ff33 inset, 1px 1px 5px #000 !important;
+	background: #3a2a22 !important;
+	color: #e2c08d !important;
+	box-shadow: 0 0 10px #c49a6c33 inset, 1px 1px 5px #000 !important;
 }
 
 .inner-table .right {
-	background: #081822 !important;
-	box-shadow: 0 0 12px #36c6ff44 inset, 1px 1px 5px #000 !important;
-	color: #bff8ff !important;
+	background: #1a120e !important;
+	box-shadow: 0 0 12px #c49a6c44 inset, 1px 1px 5px #000 !important;
+	color: #f3e2c7 !important;
 	border-radius: 10px;
 }
 
 .right_odd {
-	background: #06141d !important;
-	box-shadow: 0 0 10px #36c6ff22 inset !important;
+	background: #140e0b !important;
+	box-shadow: 0 0 10px #c49a6c22 inset !important;
 }
 
 /* ============================= */
@@ -650,10 +648,10 @@ textarea {
 /* ============================= */
 
 .item-header {
-	background: #0c2a3a !important;
+	background: #3a2a22 !important;
 	border-radius: 10px;
-	box-shadow: 0 0 10px #36c6ff44 inset !important;
-	color: #6fe7ff !important;
+	box-shadow: 0 0 10px #c49a6c44 inset !important;
+	color: #e2c08d !important;
 	font-size: 15px !important;
 	font-family: 'MedievalSharp', cursive;
 }
@@ -663,16 +661,16 @@ textarea {
 /* ============================= */
 
 .item {
-	background: #081822 !important;
-	box-shadow: 0 0 12px #36c6ff33 inset, 1px 1px 5px #000 !important;
+	background: #1a120e !important;
+	box-shadow: 0 0 12px #c49a6c33 inset, 1px 1px 5px #000 !important;
 	border-radius: 10px;
 	border: 0px ridge !important;
-	color: #d6f7ff;
+	color: #f6e7d3;
 	font-family: 'EB Garamond', serif;
 }
 
 .item-footer {
-	background: #06141d;
+	background: #140e0b;
 }
 
 /* ============================= */
@@ -680,11 +678,11 @@ textarea {
 /* ============================= */
 
 div.slider.round {
-	background: #36c6ff !important; /* Hermes lightning blue */
+	background: #c49a6c !important; /* warm bronze core */
 }
 
 div.slider.round::before {
-	background: #bff8ff !important; /* divine spark */
+	background: #f3e2c7 !important; /* parchment spark */
 }
 
 /* ============================= */
@@ -694,11 +692,11 @@ div.slider.round::before {
 .Box1,
 .Box2 {
 	float: left;
-	background: linear-gradient(180deg, #0b1f2b, #06141d);
-	color: #d6f7ff;
+	background: linear-gradient(180deg, #3a2a22, #1a120e);
+	color: #f6e7d3;
 	padding: 15px;
 	border: 0px ridge !important;
-	box-shadow: 0 0 20px #36c6ff22 inset, 1px 1px 5px #000 !important;
+	box-shadow: 0 0 20px #c49a6c22 inset, 1px 1px 5px #000 !important;
 	border-radius: 10px;
 	margin: 5px;
 	height: 300px;
@@ -719,14 +717,14 @@ div.slider.round::before {
 }
 
 ::-webkit-scrollbar-track {
-	background: #06141d;
-	box-shadow: 0 0 10px #36c6ff22 inset, 1px 1px 5px #000 !important;
+	background: #140e0b;
+	box-shadow: 0 0 10px #c49a6c22 inset, 1px 1px 5px #000 !important;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #36c6ff;
-	box-shadow: 0 0 12px #36c6ff55 inset, 1px 1px 5px #000 !important;
+	background: #c49a6c;
+	box-shadow: 0 0 12px #c49a6c55 inset, 1px 1px 5px #000 !important;
 	border-radius: 10px;
 }
 
@@ -736,8 +734,8 @@ div.slider.round::before {
 
 .breadcrumb::after { 
 	content: "CSS by Sak#327675"; 
-	color: #6fe7ff;
-	text-shadow: 1px 1px 1.5px #06141d; 
+	color: #e2c08d;
+	text-shadow: 1px 1px 1.5px #140e0b; 
 	font-size: 17px !important; 
 	position: absolute; 
 	right: 13%; 
@@ -754,7 +752,7 @@ div.slider.round::before {
 	background-position: center !important;
 	background-repeat: no-repeat !important;
 	transition: 0.8s ease;
-	box-shadow: 1px 1px 5px #06141d;
+	box-shadow: 1px 1px 5px #140e0b;
 	width: 200px;
 	height: 200px;
 	display: block;
@@ -786,41 +784,41 @@ div.left img {
 .row.dynastycollection .dynastylist .left:hover {
 	transform: scale(1.03);
 	box-shadow:
-		0 0 10px #36c6ff55,
-		0 0 20px #ffd36f33,
-		1px 1px 5px #06141d;
+		0 0 10px #c49a6c55,
+		0 0 20px #e2c08d33,
+		1px 1px 5px #140e0b;
 	filter: brightness(1.2) saturate(1.25);
 }
 
 /* ⚡ BACKGROUND TABLE */
 .table {
-	background: #081522; /* deep sky night */
+	background: #1a120e;
 	border: 0px ridge;
 	text-shadow: 1px 1px 1.5px #000;
 	border-radius: 10px !important;
 	border-collapse: separate;
-	box-shadow: 0 0 10px #36c6ff33;
+	box-shadow: 0 0 10px #c49a6c33;
 	font-family: 'EB Garamond', serif;
 }
 
 /* ⚡ LINK COLORS */
 .table a:link {
-	color: #6fe7ff !important; /* sky glow cyan */
+	color: #c49a6c !important; /* leather gold */
 	transition: 0.5s!important;
 }
 
 .table a:visited {
-	color: #6fe7ff !important;
+	color: #c49a6c !important;
 	transition: 0.5s!important;
 }
 
 .table a:active {
-	color: #ffd36f !important; /* lightning gold flash */
+	color: #f3e2c7 !important; /* parchment flash */
 	transition: 0.5s!important;
 } 
 
 .table a:hover {
-	color: #bff8ff !important; /* cloud-white glow */
+	color: #e2c08d !important; /* antique gold glow */
 	-webkit-transform: scale(1.1);
 	transition: 0.7s!important;
 }
@@ -845,20 +843,20 @@ div.left img {
 
     background: linear-gradient(
         180deg,
-        rgba(12, 26, 44, 0.95),   /* deep sky blue */
-        rgba(6, 16, 28, 0.95)    /* night void sky */
+        rgba(44, 30, 18, 0.95),   /* deep warm brown */
+        rgba(20, 12, 6, 0.95)    /* dark cocoa shadow */
     ) !important;
 
-    color: #eaf7ff; /* soft cloud white */
+    color: #f3e3d2; /* soft parchment cream */
     padding: 12px;
 
-    border: 1px solid rgba(111, 211, 255, 0.35); /* sky outline */
+    border: 1px solid rgba(166, 124, 82, 0.35); /* warm wood outline */
     border-radius: 12px;
 
     box-shadow:
         0 0 18px rgba(0,0,0,0.7),
-        inset 0 0 25px rgba(111,211,255,0.10),
-        0 0 8px rgba(255,211,111,0.18);
+        inset 0 0 25px rgba(166,124,82,0.10),
+        0 0 8px rgba(210,170,120,0.18);
 
     box-sizing: border-box;
     overflow-y: auto;
@@ -875,10 +873,10 @@ div.left img {
     transform: translateY(-4px);
 
     box-shadow:
-        0 0 25px rgba(111,211,255,0.35),
-        inset 0 0 35px rgba(255,211,111,0.18);
+        0 0 25px rgba(166,124,82,0.35),
+        inset 0 0 35px rgba(210,170,120,0.18);
 
-    border-color: rgba(255,211,111,0.45);
+    border-color: rgba(210,170,120,0.45);
 }
 
 /* ============================= */
@@ -889,19 +887,19 @@ div.left img {
     height: auto;
     border-radius: 6px;
 
-    box-shadow: 0 0 10px rgba(111,211,255,0.18);
+    box-shadow: 0 0 10px rgba(166,124,82,0.18);
 }
 
 /* ============================= */
 /* 🔤 HEADINGS */
 /* ============================= */
 .box h3 {
-    color: #ffd36f; /* Hermes gold */
+    color: #d8b08c; /* warm clay gold */
     text-align: center;
     margin-bottom: 6px;
     font-size: 18px;
 
-    text-shadow: 0 0 8px rgba(111,211,255,0.5);
+    text-shadow: 0 0 8px rgba(166,124,82,0.5);
 
     font-family: 'Cinzel', serif;
 }
@@ -914,14 +912,14 @@ div.left img {
 }
 
 .box::-webkit-scrollbar-track {
-    background: rgba(6,16,28,0.9);
+    background: rgba(20,12,6,0.9);
     border-radius: 10px;
 }
 
 .box::-webkit-scrollbar-thumb {
-    background: linear-gradient(#36c6ff, #ffd36f);
+    background: linear-gradient(#a67c52, #d2aa78);
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(111,211,255,0.4);
+    box-shadow: 0 0 8px rgba(166,124,82,0.4);
 }
 
 /* ============================= */
@@ -937,18 +935,18 @@ div.left img {
     }
 }
 
-/* 🌬️ DIVINE SKY PARTICLES */
+/* 🌬️ PARTICLES */
 .firefly::before {
-    background: #7ecbff; /* sky-glow blue (fast air energy) */
+    background: #b08968; /* soft warm sand brown */
     opacity: 0.4;
     animation: drift ease-in-out infinite alternate;
     font-family: 'Cinzel', serif;
 }
 
 .firefly::after {
-    background: #ffd36e; /* divine gold */
+    background: #ddb892; /* light honey brown glow */
     opacity: 0;
-    box-shadow: 0 0 0vw 0vw #7ecbff;
+    box-shadow: 0 0 0vw 0vw #b08968;
     animation: drift ease-in-out infinite alternate, flash ease-in-out infinite;
     font-family: 'Cinzel', serif;
 }
