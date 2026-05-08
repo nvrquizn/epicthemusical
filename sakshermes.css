@@ -16,35 +16,35 @@ READ ME:
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap');
 
 :root {
-  /* Hermes Sky Palette */
-  --kolur1: #8fd6ff;     /* sky glow blue */
-  --kolur170: #8fd6ffb0; 
 
-  --kolur2: #6fb6ff;     /* airy cloud blue */
-  --kolur270: #6fb6ffb0;
+  --kolur1: #d8b89a;     /* warm parchment glow */
+  --kolur170: #d8b89ab0;
 
-  --kolur3: #1a2433;     /* deep twilight sky */
-  --kolur370: #1a2433c7;
+  --kolur2: #c49a6c;     /* soft leather tan */
+  --kolur270: #c49a6cb0;
 
-  --kolur350: #2a3a55d9; /* storm glass */
+  --kolur3: #2a1f1a;     /* deep walnut brown */
+  --kolur370: #2a1f1ac7;
 
-  --kolur4: #a78bff;     /* soft divine violet */
-  --kolur470: #a78bffc7;
+  --kolur350: #3a2a22d9; /* aged wood / leather shadow */
 
-  --kolur5: #eaf6ff;     /* pale sky light */
-  --kolur6: #121a28;     /* night sky shadow */
-  --kolur7: #ffd37a;     /* Hermes gold accent */
+  --kolur4: #b08a5a;     /* antique gold accent */
+  --kolur470: #b08a5ac7;
 
-  --kolur760: #6fb6ff40;
-  --kolur780: #a78bff40;
+  --kolur5: #f3e2c7;     /* parchment light */
+  --kolur6: #1a120e;     /* ink shadow brown */
+  --kolur7: #e2c08d;     /* Hermes bronze-gold highlight */
 
-  --darkgray: #0b0f18;   /* deep void sky */
-  --lightwhite: #f4fbffcc; /* cloud white */
+  --kolur760: #c49a6c40;
+  --kolur780: #b08a5a40;
+
+  --darkgray: #120d0a;   /* deep ink leather */
+  --lightwhite: #f6e7d3cc; /* aged parchment wash */
   --white: #ffffff;
 }
 
 /* ============================= */
-/* 🌬️ BACKGROUND (HERMES / SKY) */
+/* 🌬️ BACKGROUND */
 /* ============================= */
 
 @media screen and (max-width: 800px){
