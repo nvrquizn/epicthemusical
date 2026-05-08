@@ -353,8 +353,8 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
 .mound-grid img {
     background: url('https://i.ibb.co/yF8TqJ65/Screenshot-2026-05-08-at-00-57-53.png') no-repeat center !important;
 
-    width: 70px !important;
-    height: 70px !important;
+    width: 100px !important;
+    height: 100px !important;
 
     padding-top: 100px;
     padding-right: 100px;
