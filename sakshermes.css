@@ -1,0 +1,1048 @@
+/* ========================================================= */
+/* 🌬️ Sak (#327675)'s Den CSS - Hermes Theme               */
+/* ⚡ Sky Messenger / Wind & Divine Motion Aesthetic        */
+/* ========================================================= */
+
+/*
+READ ME:
+- This theme is inspired by Hermes from Epic the Musical.
+- Expect airy sky tones, glowing motion accents, and divine messenger energy.
+- Colors are cool blues, soft violets, and luminous highlights.
+- Designed for a fast, light, ethereal atmosphere.
+- Do NOT redistribute without credit.
+*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap');
+
+:root {
+  /* Hermes Sky Palette */
+  --kolur1: #8fd6ff;     /* sky glow blue */
+  --kolur170: #8fd6ffb0; 
+
+  --kolur2: #6fb6ff;     /* airy cloud blue */
+  --kolur270: #6fb6ffb0;
+
+  --kolur3: #1a2433;     /* deep twilight sky */
+  --kolur370: #1a2433c7;
+
+  --kolur350: #2a3a55d9; /* storm glass */
+
+  --kolur4: #a78bff;     /* soft divine violet */
+  --kolur470: #a78bffc7;
+
+  --kolur5: #eaf6ff;     /* pale sky light */
+  --kolur6: #121a28;     /* night sky shadow */
+  --kolur7: #ffd37a;     /* Hermes gold accent */
+
+  --kolur760: #6fb6ff40;
+  --kolur780: #a78bff40;
+
+  --darkgray: #0b0f18;   /* deep void sky */
+  --lightwhite: #f4fbffcc; /* cloud white */
+  --white: #ffffff;
+}
+
+/* ============================= */
+/* 🌬️ BACKGROUND (HERMES / SKY) */
+/* ============================= */
+
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://i.ibb.co/qYLYV77Y/Screenshot-2026-05-08-at-00-36-20.png') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+
+    /* 🌬️ sky-light glow text */
+    color: var(--kolur1) !important;
+  }
+}
+
+@media screen and (min-width: 801px){
+  body {
+    background: url('https://i.ibb.co/qYLYV77Y/Screenshot-2026-05-08-at-00-36-20.png') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Cinzel', 'Cormorant Garamond', serif;
+    font-size: 18px !important;
+
+    /* ⚡ airy divine readability */
+    color: var(--kolur1) !important;
+  } 
+}
+
+/* Cursor */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/cute-orange-cloud-f0b544a9-css.webp') 0 0, auto !important;
+}
+
+/* ============================= */
+/* 🌌 CHAT */
+/* ============================= */
+
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(210, 240, 255, 0.55) !important; /* soft sky glass */
+    color: #08324a !important; /* deep sea ink text */
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(180, 225, 255, 0.45) !important; /* airy cloud blue */
+    color: #08324a !important;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(
+        90deg,
+        rgba(170, 230, 255, 0.65),
+        rgba(255, 220, 140, 0.25) /* Hermes gold spark */
+    ) !important;
+
+    color: #062636 !important;
+    box-shadow: 0 0 12px rgba(120, 200, 255, 0.25);
+}
+
+.s-chat-message_timestamp {
+    color: #2a7aa6 !important; /* sky rune blue */
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #9fdcff, #ffd78a) !important; /* sky → gold */
+    color: #062636 !important;
+}
+
+/* ============================= */
+/* 🕊️ LOGO REPLACER */
+/* ============================= */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/fV10Rtck/Et-Mlogo-20260508004908.png');
+    width: 230px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+}
+
+/* ============================= */
+/* 🌤️ TOPBAR) */
+/* ============================= */
+
+.container.topbar {
+    background: linear-gradient(
+        180deg,
+        rgba(200, 235, 255, 0.85),
+        rgba(170, 220, 255, 0.75)
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        inset 0 0 25px rgba(120,200,255,0.18),
+        0 0 12px rgba(255,215,130,0.25),
+        1px 1px 5px rgba(0,0,0,0.25) !important;
+
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+}
+
+/* 🌤️ Welcome text */
+.welcomeback {
+    color: #1a4f6b !important;
+    font-size: 16px;
+    text-shadow: 0 0 6px rgba(120,200,255,0.35);
+}
+
+/* username link */
+.welcomeback a {
+    color: #2f86c7 !important;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(120,200,255,0.55);
+    transition: 0.5s;
+}
+
+.welcomeback a:hover {
+    color: #ffd78a !important;
+    text-shadow: 0 0 12px rgba(255,215,130,0.8);
+}
+
+/* ============================= */
+/* 🌬️ TOP LINKS */
+/* ============================= */
+
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* links */
+.toplinks li a {
+    color: #2a7aa6 !important; /* sky script blue */
+    font-size: 15px;
+    text-decoration: none;
+
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    transition: 0.4s ease;
+}
+
+/* hover glow */
+.toplinks li a:hover {
+    color: #ffd78a !important; /* Hermes gold flash */
+
+    background: rgba(120, 200, 255, 0.15);
+    box-shadow: 0 0 10px rgba(120, 200, 255, 0.25);
+
+    text-shadow: 0 0 6px rgba(255, 215, 130, 0.6);
+}
+
+/* ============================= */
+/* 🌤️ ICONS */
+/* ============================= */
+
+.toplinks img.icon {
+    filter:
+        drop-shadow(0 0 4px rgba(120, 200, 255, 0.35))
+        brightness(1.1);
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter:
+        drop-shadow(0 0 8px rgba(255, 215, 130, 0.6))
+        brightness(1.2);
+}
+
+/* ============================= */
+/* 💠 CURRENCY NUMBERS */
+/* ============================= */
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #2a7aa6 !important;
+    text-shadow: 0 0 6px rgba(120, 200, 255, 0.45);
+}
+
+/* ============================= */
+/* ✨ LOGOUT */
+/* ============================= */
+
+.toplinks li a[href*="logout"] {
+    color: #3c8fc7 !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(255, 215, 130, 0.18);
+    box-shadow: 0 0 12px rgba(255, 215, 130, 0.35);
+}
+
+/* ============================= */
+/* 🌌 CAVE IMAGE THEMING */
+/* ============================= */
+
+/* base cave image styling (DO NOT override specific banners) */
+div.cave-grid > img {
+	content: url('https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png') !important;
+    height: 150px;
+    width: 250px;
+    opacity: 0.78;
+    border-radius: 10px !important;
+    box-shadow: 0 0 14px rgba(54, 198, 255, 0.28) !important; /* sky glow */
+    transition: 0.3s ease;
+}
+
+/* hover base */
+div.cave-grid > img:hover {
+    content: url('https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png') !important;
+    opacity: 1;
+    filter: brightness(1.15) contrast(1.1) saturate(1.2);
+}
+
+/* pride overview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/ymQ0Hr0h/Screenshot-2026-05-08-at-00-57-10.png') !important;
+}
+
+/* pride overview hover */
+div.cave-grid > img[src$="prideoverview.png"]:hover {
+    content: url('https://i.ibb.co/ymQ0Hr0h/Screenshot-2026-05-08-at-00-57-10.png') !important;
+	transition: 0.9s !important;
+}
+
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/N2vBNQNx/Screenshot-2026-05-08-at-00-56-26.png') !important;
+}
+
+/* unsorted lions hover */
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/N2vBNQNx/Screenshot-2026-05-08-at-00-56-26.png') !important;
+	transition: 0.9s !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/Nggnm6Nj/Screenshot-2026-05-08-at-00-56-49.png') !important;
+}
+
+/* nesting hover */
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/Nggnm6Nj/Screenshot-2026-05-08-at-00-56-49.png') !important;
+	transition: 0.9s !important;
+}
+
+/* regular caves */
+div.cave-grid > img[src$="cavedefault.jpg"] {
+    content: url("https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png") !important;
+}
+
+div.cave-grid > img[src$="cavedefault.jpg"]:hover {
+    content: url("https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png") !important;
+	transition: 0.9s !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png") !important;
+}
+
+div.cave-grid > img[src$="caveunused.jpg"]:hover {
+    content: url("https://i.ibb.co/RThDNszy/Screenshot-2026-05-08-at-00-57-26.png") !important;
+	transition: 0.9s !important;
+}
+
+/* ============================= */
+/* 🪽 FEATURED LIONESS */
+/* ============================= */
+
+.lionImage img:first-child {
+    visibility: hidden;
+}
+
+.lionImage {
+    background: url('https://i.ibb.co/fVcm9cHq/Screenshot-2026-05-08-at-01-02-25.png') no-repeat !important;
+    background-size: cover;
+    box-shadow: 0 0 22px rgba(168, 120, 255, 0.22); /* divine violet glow */
+}
+
+/* ============================= */
+/* 🌌 CAVE / PANEL STYLE SHIFT */
+/* ============================= */
+
+.cave-grid,
+.mound-grid {
+    background: rgba(8, 14, 28, 0.72) !important; /* night sky base */
+    box-shadow:
+        inset 0 0 25px rgba(54,198,255,0.08),
+        0 0 10px rgba(0,0,0,0.55) !important;
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #050816;
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+/* ============================= */
+/* 🌬️ MOUNDS */
+/* ============================= */
+
+/* beetle mound */
+.mound-grid img {
+    background: url('https://i.ibb.co/yF8TqJ65/Screenshot-2026-05-08-at-00-57-53.png') no-repeat center !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    padding-top: 100px;
+    padding-right: 100px;
+
+    border-radius: 10px !important;
+    opacity: 0.8;
+
+    box-shadow: 1px 1px 6px rgba(54,198,255,0.18)!important;
+}
+
+/* hover */
+.mound-grid img:hover {
+    transition: 0.9s !important;
+    opacity: 1;
+}
+
+
+/* ============================= */
+/* ☁️ COMMENT BOX */
+/* ============================= */
+
+#commentBox {
+	background: rgba(18, 26, 44, 0.55) !important; /* twilight sky glass */
+	box-shadow: inset 0 0 18px rgba(111, 211, 255, 0.12),
+	            0 0 8px rgba(255, 211, 111, 0.18) !important;
+	border: none !important;
+}
+
+::placeholder {
+	color: #dff6ff !important; /* soft cloud white-blue */
+}
+
+div.comment {
+	background: rgba(20, 30, 60, 0.55); /* deep sky layer */
+	box-shadow: inset 0 0 18px rgba(111, 211, 255, 0.10),
+	            0 0 8px rgba(255, 211, 111, 0.15) !important;
+	font-weight: bold;
+	color: #f5fbff; /* airy cloud white */
+}
+
+input#comment {
+	background: rgba(111, 211, 255, 0.14) !important; /* sky glow */
+	color: #0b1020 !important; /* deep night contrast */
+	border-radius: 10px !important;
+}
+
+small.text-muted {
+	color: #cfefff;
+}
+
+small.text-muted a {
+	color: #ffd36f; /* Hermes gold accent */
+}
+
+input[type="button"].bad {
+	background: #ffd36f !important; /* divine gold */
+	border-radius: 10px !important;
+	color: #0b1020 !important;
+}
+
+/* ⚡ GENERAL ALERT */
+.alert {
+	background: #0b1020; /* night sky base */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #6fd3ff !important; /* messenger glow blue */
+	box-shadow: #6fd3ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* ⚠️ WARNING ALERT */
+.alert-warning{
+	background: #121a33; /* storm sky */
+	border: 0px ridge;
+	text-align: center;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #ffd36f !important; /* golden warning */
+	box-shadow: #ffd36f66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* ❗ DANGER ALERT */
+.alert-danger {
+	background: #080c18 !important; /* deep void sky */
+	text-align: center;
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	float: none;
+	color: #f5fbff !important; /* lightning white */
+	box-shadow: #6fd3ff66 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* 🪽 SIDE BOXES / FEATURE PANELS */
+.feature,
+div.left {
+	background: #111a2e !important; /* sky-panel blue */
+	box-shadow: #6fd3ff44 0px -80px 36px -28px inset, 1px 1px 5px #000 !important;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border: none!important;
+	color: #dff6ff !important; /* airy glow text */
+}
+
+/* 🧱 MAIN PANELS */
+.panel {
+	background: #0b1020 !important; /* deep Olympus night */
+	border: 0px ridge !important;
+	border-radius: 10px;
+	color:#eaf7ff !important;
+	box-shadow: #6fd3ff33 0px -50px 36px -28px inset, 1px 1px 5px #000 !important;
+}
+
+/* 🔤 TEXT INSIDE BARS */
+.progress div {
+	color: #f5fbff !important;
+	font-size: 13px !important;
+	text-shadow: 1px 1px 1px #000 !important;
+}
+
+/* 🪶 BAR BACKGROUND */
+.progress {
+	background: linear-gradient(#0b1020, #111a2e);
+	box-shadow:1px 1px 5px #000 !important;
+	border-radius: 20px;
+}
+
+/* ⚡ ENERGY BAR */
+.progress-bar-warning {
+   background: linear-gradient(#ffd36f, #6fd3ff)!important;
+}
+
+/* 🌬️ HUNGER BAR */
+.progress-bar-danger {
+    background: linear-gradient(#6fd3ff, #f5fbff)!important;
+}
+
+/* ✨ XP BAR */
+.progress-bar-success {
+    background: linear-gradient(#f5fbff, #ffd36f)!important;
+}
+
+/* 📊 GENERAL BAR STYLE */
+.progress-bar {
+    background: linear-gradient(#6fd3ff, #ffd36f);
+	border-radius: 20px;
+	box-shadow:1px 1px 5px #000 !important;
+}
+
+/* 🏆 ACHIEVEMENT BAR */
+div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
+	background: linear-gradient(#ffd36f, #6fd3ff)!important;
+}
+
+/* 📈 ACCOUNT STANDING */
+th > div > div.progress-bar.progress-bar-success {
+    background: linear-gradient(#6fd3ff, #f5fbff)!important;
+}
+
+/* ☁️ MAIN HEADER */
+h1 {
+	color: #ffd36f;
+	font-size: 72px;
+	font-family: 'Cinzel', serif; /* mythic divine serif */
+	text-align: center;
+	text-shadow: 0 0 12px #6fd3ff;
+}
+
+/* ☁️ SUB HEADER */
+h2 {
+	color: #dff6ff;
+	font-size: 56px;
+	text-align: center;
+	text-shadow: 0 0 10px #ffd36f;
+}
+
+/* ☁️ SMALL HEADER */
+h3 {
+	color: #f5fbff !important;
+	font-size: 22px !important;
+}
+
+/* ⚡ HOVER EFFECT */
+h3:hover {
+	color: #6fd3ff !important;
+	transition: .7s!important;
+}
+
+/* 🏛️ MAIN LION INFO TABLE */
+.table {
+	background: #0b1020; /* celestial night base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 8px #6fd3ff33;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=EB+Garamond:wght@400;600&display=swap');
+
+/* ============================= */
+/* 🌬️ LINK COLORS */
+/* ============================= */
+
+.table a:link,
+.table a:visited {
+	color: #6fe7ff !important; /* sky-glow cyan */
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #bff8ff !important; /* lightning flash */
+	transition: 0.5s!important;
+}
+
+.table a:hover {
+	color: #a6fff2 !important; /* ethereal mist glow */
+	transform: scale(1.05);
+	transition: 0.7s!important;
+}
+
+/* ============================= */
+/* ⚡ HEADER ROWS */
+/* ============================= */
+
+.top,
+.bottom,
+th {
+	background: #102a3a !important; /* deep sky dusk */
+	box-shadow: 0 0 12px #36c6ff66 inset, 1px 1px 5px #000 !important;
+	color: #a6fff2 !important; /* celestial mint */
+	font-size: 18px !important;
+	border-radius: 10px;
+	font-family: 'MedievalSharp', cursive;
+}
+
+/* ============================= */
+/* 🌬️ LEFT PANEL */
+/* ============================= */
+
+.table .left {
+	background: #0b1f2b !important; /* night sky blue */
+	box-shadow: 0 0 10px #36c6ff33 inset !important;
+	border-radius: 10px;
+}
+
+/* ============================= */
+/* ⚡ INPUT FIELDS */
+/* ============================= */
+
+input,
+select,
+textarea {
+	background: #081822 !important;
+	border: 0px ridge !important;
+	box-shadow: 0 0 10px #36c6ff33 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	color: #d6f7ff !important;
+	text-shadow: 1px 1px 2px #000 !important;
+	font-family: 'EB Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ INNER TABLE */
+/* ============================= */
+
+.inner-table .left {
+	background: #0c2230 !important;
+	color: #6fe7ff !important;
+	box-shadow: 0 0 10px #36c6ff33 inset, 1px 1px 5px #000 !important;
+}
+
+.inner-table .right {
+	background: #081822 !important;
+	box-shadow: 0 0 12px #36c6ff44 inset, 1px 1px 5px #000 !important;
+	color: #bff8ff !important;
+	border-radius: 10px;
+}
+
+.right_odd {
+	background: #06141d !important;
+	box-shadow: 0 0 10px #36c6ff22 inset !important;
+}
+
+/* ============================= */
+/* ⚡ ITEM HEADERS */
+/* ============================= */
+
+.item-header {
+	background: #0c2a3a !important;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #36c6ff44 inset !important;
+	color: #6fe7ff !important;
+	font-size: 15px !important;
+	font-family: 'MedievalSharp', cursive;
+}
+
+/* ============================= */
+/* 🌬️ ITEM BOXES */
+/* ============================= */
+
+.item {
+	background: #081822 !important;
+	box-shadow: 0 0 12px #36c6ff33 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	border: 0px ridge !important;
+	color: #d6f7ff;
+	font-family: 'EB Garamond', serif;
+}
+
+.item-footer {
+	background: #06141d;
+}
+
+/* ============================= */
+/* ⚡ SLIDER */
+/* ============================= */
+
+div.slider.round {
+	background: #36c6ff !important; /* Hermes lightning blue */
+}
+
+div.slider.round::before {
+	background: #bff8ff !important; /* divine spark */
+}
+
+/* ============================= */
+/* 🌬️ BOXES */
+/* ============================= */
+
+.Box1,
+.Box2 {
+	float: left;
+	background: linear-gradient(180deg, #0b1f2b, #06141d);
+	color: #d6f7ff;
+	padding: 15px;
+	border: 0px ridge !important;
+	box-shadow: 0 0 20px #36c6ff22 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+	margin: 5px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: 1s;
+	font-family: 'EB Garamond', serif;
+}
+
+/* ============================= */
+/* 🌬️ SCROLLBAR */
+/* ============================= */
+
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: #06141d;
+	box-shadow: 0 0 10px #36c6ff22 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #36c6ff;
+	box-shadow: 0 0 12px #36c6ff55 inset, 1px 1px 5px #000 !important;
+	border-radius: 10px;
+}
+
+/* ============================= */
+/* ⚡ CREDITS (DO NOT REMOVE) */
+/* ============================= */
+
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: #6fe7ff;
+	text-shadow: 1px 1px 1.5px #06141d; 
+	font-size: 17px !important; 
+	position: absolute; 
+	right: 13%; 
+	z-index: 100;
+	font-family: 'MedievalSharp', cursive;
+}
+
+/* ⚡ DYNASTY LIST */
+.dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	transition: 0.8s ease;
+	box-shadow: 1px 1px 5px #06141d;
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.dynastylist a {
+	display: block;
+}
+
+/* shared behavior fix */
+.dynastylist .left {
+	display: block;
+}
+
+/* ⚡ Dynasty */
+div.left img {
+    content: url('https://i.ibb.co/KcPxnNfK/Screenshot-2026-05-08-at-00-58-09.png') !important;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 150px;
+    max-width: 150px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/* ✨ hover glow effect */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+	box-shadow:
+		0 0 10px #36c6ff55,
+		0 0 20px #ffd36f33,
+		1px 1px 5px #06141d;
+	filter: brightness(1.2) saturate(1.25);
+}
+
+/* ⚡ BACKGROUND TABLE */
+.table {
+	background: #081522; /* deep sky night */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 10px #36c6ff33;
+	font-family: 'EB Garamond', serif;
+}
+
+/* ⚡ LINK COLORS */
+.table a:link {
+	color: #6fe7ff !important; /* sky glow cyan */
+	transition: 0.5s!important;
+}
+
+.table a:visited {
+	color: #6fe7ff !important;
+	transition: 0.5s!important;
+}
+
+.table a:active {
+	color: #ffd36f !important; /* lightning gold flash */
+	transition: 0.5s!important;
+} 
+
+.table a:hover {
+	color: #bff8ff !important; /* cloud-white glow */
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+}
+
+/* ============================= */
+/* ☁️ CONTAINER */
+/* ============================= */
+.boxcontainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* ============================= */
+/* ⚡ BOX */
+/* ============================= */
+.box {
+    flex: 1;
+    height: 240px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(12, 26, 44, 0.95),   /* deep sky blue */
+        rgba(6, 16, 28, 0.95)    /* night void sky */
+    ) !important;
+
+    color: #eaf7ff; /* soft cloud white */
+    padding: 12px;
+
+    border: 1px solid rgba(111, 211, 255, 0.35); /* sky outline */
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.7),
+        inset 0 0 25px rgba(111,211,255,0.10),
+        0 0 8px rgba(255,211,111,0.18);
+
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    transition: all 0.35s ease;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* ⚡ SKY HOVER */
+/* ============================= */
+.box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(111,211,255,0.35),
+        inset 0 0 35px rgba(255,211,111,0.18);
+
+    border-color: rgba(255,211,111,0.45);
+}
+
+/* ============================= */
+/* 🖼️ IMAGE SAFETY */
+/* ============================= */
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+    box-shadow: 0 0 10px rgba(111,211,255,0.18);
+}
+
+/* ============================= */
+/* 🔤 HEADINGS */
+/* ============================= */
+.box h3 {
+    color: #ffd36f; /* Hermes gold */
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 18px;
+
+    text-shadow: 0 0 8px rgba(111,211,255,0.5);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 📜 SCROLLBAR */
+/* ============================= */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(6,16,28,0.9);
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#36c6ff, #ffd36f);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(111,211,255,0.4);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 767px) {
+    .boxcontainer {
+        flex-direction: column;
+    }
+
+    .box {
+        height: auto;
+    }
+}
+
+/* 🌬️ DIVINE SKY PARTICLES */
+.firefly::before {
+    background: #7ecbff; /* sky-glow blue (fast air energy) */
+    opacity: 0.4;
+    animation: drift ease-in-out infinite alternate;
+    font-family: 'Cinzel', serif;
+}
+
+.firefly::after {
+    background: #ffd36e; /* divine gold */
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw #7ecbff;
+    animation: drift ease-in-out infinite alternate, flash ease-in-out infinite;
+    font-family: 'Cinzel', serif;
+}
+
+/* 🌬️ MOVEMENT SET 12 */
+.firefly:nth-child(12) {
+  animation-name: move12;
+}
+.firefly:nth-child(12)::before {
+  animation-duration: 14s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 14s, 7600ms;
+  animation-delay: 0ms, 3200ms;
+}
+
+@keyframes move12 {
+  0% { transform: translateX(12vw) translateY(-18vh) scale(0.6); }
+  25% { transform: translateX(-28vw) translateY(22vh) scale(0.75); }
+  50% { transform: translateX(18vw) translateY(30vh) scale(0.9); }
+  75% { transform: translateX(-14vw) translateY(-20vh) scale(0.65); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.6); }
+}
+
+.firefly:nth-child(12)::before {
+  animation-duration: 13s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 13s, 7200ms;
+  animation-delay: 0ms, 2400ms;
+}
+
+/* 🌬️ MOVEMENT SET 13 */
+.firefly:nth-child(13) {
+  animation-name: move13;
+}
+.firefly:nth-child(13)::before {
+  animation-duration: 11s;
+}
+.firefly:nth-child(13)::after {
+  animation-duration: 11s, 8200ms;
+  animation-delay: 0ms, 1800ms;
+}
+
+@keyframes move13 {
+  0% { transform: translateX(24vw) translateY(18vh) scale(0.5); }
+  25% { transform: translateX(-40vw) translateY(34vh) scale(0.8); }
+  50% { transform: translateX(12vw) translateY(-18vh) scale(0.95); }
+  75% { transform: translateX(-30vw) translateY(-10vh) scale(0.65); }
+  100% { transform: translateX(14vw) translateY(26vh) scale(0.55); }
+}
+
+/* 🌬️ MOVEMENT SET 14 */
+.firefly:nth-child(14) {
+  animation-name: move14;
+}
+.firefly:nth-child(14)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(14)::after {
+  animation-duration: 15s, 8800ms;
+  animation-delay: 0ms, 6000ms;
+}
+
+@keyframes move14 {
+  0% { transform: translateX(18vw) translateY(-26vh) scale(0.85); }
+  25% { transform: translateX(-45vw) translateY(-12vh) scale(0.95); }
+  50% { transform: translateX(14vw) translateY(-8vh) scale(0.7); }
+  75% { transform: translateX(-20vw) translateY(32vh) scale(0.6); }
+  100% { transform: translateX(0vw) translateY(0vh) scale(0.6); }
+}
+
+/* 🌬️ MOVEMENT SET 15 */
+.firefly:nth-child(15) {
+  animation-name: move15;
+}
+.firefly:nth-child(15)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(15)::after {
+  animation-duration: 16s, 6800ms;
+  animation-delay: 0ms, 5200ms;
+}
+
+@keyframes move15 {
+  0% { transform: translateX(-10vw) translateY(-22vh) scale(0.8); }
+  25% { transform: translateX(42vw) translateY(-14vh) scale(0.65); }
+  50% { transform: translateX(-25vw) translateY(34vh) scale(0.85); }
+  75% { transform: translateX(28vw) translateY(28vh) scale(0.6); }
+  100% { transform: translateX(16vw) translateY(46vh) scale(1); }
+}
+
+/* 🌬️ SHARED MOTION EFFECT (wind flow) */
+@keyframes drift {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
