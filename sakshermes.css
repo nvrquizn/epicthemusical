@@ -122,8 +122,8 @@ button#label_currentChannel {
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     content: url('https://i.ibb.co/fV10Rtck/Et-Mlogo-20260508004908.png');
-    width: 250px !important;
-    height: 140px !important;
+    width: 240px !important;
+    height: 130px !important;
     object-fit: contain !important;
 }
 
