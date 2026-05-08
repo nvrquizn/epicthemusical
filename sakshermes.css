@@ -68,7 +68,7 @@ READ ME:
     font-family: 'Cinzel', 'Cormorant Garamond', serif;
     font-size: 18px !important;
 
-    /* ⚡ airy divine readability */
+    /* ⚡ readability */
     color: var(--kolur1) !important;
   } 
 }
@@ -371,6 +371,145 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
     opacity: 1;
 }
 
+/* ============================= */
+/* 🌊 LION + USER AVATAR */
+/* ============================= */
+
+div#lion_image {
+	opacity: .85;
+	box-shadow: 0 0 12px rgba(176, 137, 104, 0.25) !important;
+	border-radius: 6% !important;
+	overflow: hidden;
+	margin-top: 19px;
+	margin-left: 6px;
+	transition: .6s ease;
+}
+
+div#lion_image:hover {
+	opacity: 1;
+	box-shadow: 0 0 18px rgba(221, 184, 146, 0.45) !important;
+	transition: .6s ease;
+}
+
+table#player img {
+	opacity: 0.85;
+	box-shadow: 0 0 10px rgba(160, 120, 90, 0.2) !important;
+	border-radius: 8px;
+}
+
+table#player img:hover {
+	opacity: 1;
+	box-shadow: 0 0 16px rgba(221, 184, 146, 0.35) !important;
+	transition: .6s ease;
+}
+
+/* ============================= */
+/* 🌌 NAVBAR */
+/* ============================= */
+
+.navbar {
+	background: #2b1d16; /* deep walnut brown */
+	border-bottom: 0px ridge !important;
+	border-radius: 10px;
+	box-shadow: inset 0 -40px 60px rgba(176, 137, 104, 0.15),
+	            0 0 8px rgba(221, 184, 146, 0.15) !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px !important;
+	color: #ddb892 !important; /* warm sand brown */
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	background: #3a281f;
+	color: #ede0d4 !important;
+	text-shadow: 0 0 6px rgba(221, 184, 146, 0.5);
+	border-radius: 18px;
+	box-shadow: inset 0 0 18px rgba(176, 137, 104, 0.25);
+	transition: 0.7s !important;
+}
+
+/* ============================= */
+/* MAIN PANEL */
+/* ============================= */
+
+.container.main {
+	background: rgba(28, 20, 15, 0.92) !important;
+	border-left: 0px ridge;
+	border-right: 0px ridge;
+	border-bottom: 0px ridge;
+	border-radius: 10px;
+	box-shadow: inset 0 0 90px rgba(176, 137, 104, 0.12),
+	            0 0 8px rgba(221, 184, 146, 0.08) !important;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+/* ============================= */
+/* LEFT PANEL */
+/* ============================= */
+
+.col-md-9 {
+	background: none;
+	border-right: none;
+	color: #ede0d4 !important;
+}
+
+/* ============================= */
+/* BREADCRUMB */
+/* ============================= */
+
+.breadcrumb {
+	background: #33241c !important;
+	border: 0px ridge !important;
+	border-radius: 5px;
+	box-shadow: inset 0 0 18px rgba(221, 184, 146, 0.12),
+	            0 0 6px rgba(176, 137, 104, 0.1) !important;
+}
+
+.breadcrumb .active {
+	color: #ddb892;
+	font-size: 18px !important;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+input.floatright {
+	background: rgba(176, 137, 104, 0.15) !important;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #ede0d4 !important;
+	text-shadow: 0 0 4px rgba(221, 184, 146, 0.2) !important;
+	box-shadow: inset 0 0 18px rgba(176, 137, 104, 0.2),
+	            0 0 6px rgba(160, 120, 90, 0.1) !important;
+}
+
+input.floatright:hover {
+	background: rgba(221, 184, 146, 0.18) !important;
+	box-shadow: inset 0 0 22px rgba(221, 184, 146, 0.3),
+	            0 0 10px rgba(221, 184, 146, 0.2) !important;
+	transition: .7s !important;
+}
+
+button.button {
+	background: #2b1d16;
+	border: 0px ridge;
+	border-radius: 10px !important;
+	color: #ddb892;
+	font-size: 18px !important;
+	text-shadow: 0 0 4px rgba(221, 184, 146, 0.2);
+	box-shadow: inset 0 0 18px rgba(176, 137, 104, 0.15),
+	            0 0 6px rgba(221, 184, 146, 0.1) !important;
+}
+
+button.button:hover {
+	background: #3a281f;
+	color: #ede0d4;
+	box-shadow: inset 0 0 24px rgba(221, 184, 146, 0.25),
+	            0 0 12px rgba(221, 184, 146, 0.2) !important;
+	transition: .7s !important;
+}
 
 /* ============================= */
 /* ☁️ COMMENT BOX */
