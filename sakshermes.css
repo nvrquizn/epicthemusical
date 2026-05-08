@@ -352,13 +352,13 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
 /* beetle mound */
 .mound-grid img {
     background: url('https://i.ibb.co/yF8TqJ65/Screenshot-2026-05-08-at-00-57-53.png') no-repeat center !important;
-    background-size: 100% 100% !important;
+    background-size: 75% 750% !important;
 
     width: 200px !important;
     height: 200px !important;
 
-    padding-top: 150px;
-    padding-right: 150px;
+    padding-top: 170px;
+    padding-right: 170px;
 
     border-radius: 10px !important;
     opacity: 0.8;
