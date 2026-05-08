@@ -340,8 +340,8 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
     box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
     border-radius: 12px !important;
     text-shadow: 1px 1px 1.5px #050816;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 175px;
+    max-width: 175px;
     overflow: hidden;
 }
 
@@ -352,6 +352,7 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
 /* beetle mound */
 .mound-grid img {
     background: url('https://i.ibb.co/yF8TqJ65/Screenshot-2026-05-08-at-00-57-53.png') no-repeat center !important;
+    background-size: 100% 100% !important;
 
     width: 200px !important;
     height: 200px !important;
