@@ -340,8 +340,8 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
     box-shadow: 0 0 14px rgba(194, 154, 108, 0.30) !important; /* antique gold glow */
     border-radius: 12px !important;
     text-shadow: 1px 1px 1.5px #050816;
-    max-height: 175px;
-    max-width: 250px;
+    max-height: 200px;
+    max-width: 200px;
     overflow: hidden;
 }
 
@@ -353,11 +353,11 @@ background: rgba(42, 30, 22, 0.72) !important; /* aged parchment shadow */
 .mound-grid img {
     background: url('https://i.ibb.co/yF8TqJ65/Screenshot-2026-05-08-at-00-57-53.png') no-repeat center !important;
 
-    width: 100px !important;
-    height: 100px !important;
+    width: 200px !important;
+    height: 200px !important;
 
-    padding-top: 100px;
-    padding-right: 100px;
+    padding-top: 50px;
+    padding-right: 50px;
 
     border-radius: 10px !important;
     opacity: 0.8;
